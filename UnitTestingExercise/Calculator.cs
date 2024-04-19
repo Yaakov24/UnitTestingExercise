@@ -44,7 +44,7 @@ namespace UnitTestingExercise
 
         // Step 8: 
         // Create a Divide method that passes 2 integers
-        public int Divide(int num1, int num2)
+        public double Divide(double num1, double num2)
         {
             return num1 / num2;
         }

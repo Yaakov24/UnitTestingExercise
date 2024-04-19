@@ -69,18 +69,18 @@ namespace UnitTestingExercise.Tests
         }
 
         [Theory]
-        [InlineData(7, 5, 1.4)]
-        [InlineData(7, 4,1.75)]
-        [InlineData(9, 5, 1.8)]
-        [InlineData( 8, 2, 4 )]
-        [InlineData(0, 1 , 0 )]
+        [InlineData(7, 5, 1.4)]//good
+        [InlineData(7, 4,1.75)]//good
+        [InlineData(9, 5, 1.8)]//good
+        [InlineData( 8, 2, 4 )]//good
+        [InlineData(0, 1 , 0 )]//good
         //Add test data <-------
-        public void DivideTest(int num1, int num2, int expected)
+        public void DivideTest(double num1, double num2, double expected)
         {
             //Arrange
             Calculator calculator = new Calculator();
             //Act
-            var actual = calculator.Divide(num1, num2);
+            double actual = calculator.Divide(num1, num2);
             //Assert
             Assert.Equal(expected, actual);
 
